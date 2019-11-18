@@ -18,13 +18,13 @@ object Reproduction {
   val _: EndpointIO[OptionalStringField] = jsonBody[OptionalStringField]
 
   /** doesn't compile:
-   * Error:(25, 39) Cannot find a codec for type: Reproduction.C, formatted as: sttp.tapir.CodecFormat.Json.
-   * Did you define a codec for: Reproduction.C?
-   * Did you import the codecs for: sttp.tapir.CodecFormat.Json?
-   * Is there an implicit schema for: Reproduction.C, and all of its components?
-   * (codecs are looked up as implicit values of type Codec[Reproduction.C, sttp.tapir.CodecFormat.Json, _];
-   * schemas are looked up as implicit values of type Schema[Reproduction.C])
-   * val cInput: EndpointIO[C] = jsonBody[C]
+    * Error:(28, 50) Cannot find a codec for type: Reproduction.OptionalJsonField, formatted as: sttp.tapir.CodecFormat.Json.
+    * Did you define a codec for: Reproduction.OptionalJsonField?
+    * Did you import the codecs for: sttp.tapir.CodecFormat.Json?
+    * Is there an implicit schema for: Reproduction.OptionalJsonField, and all of its components?
+    * (codecs are looked up as implicit values of type Codec[Reproduction.OptionalJsonField, sttp.tapir.CodecFormat.Json, _];
+    * schemas are looked up as implicit values of type Schema[Reproduction.OptionalJsonField])
+    * val _: EndpointIO[OptionalJsonField] = jsonBody[OptionalJsonField]
    */
   val _: EndpointIO[OptionalJsonField] = jsonBody[OptionalJsonField]
 
